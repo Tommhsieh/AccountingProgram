@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+    display: flex;
+    margin: 0;
+}
+.blueArea {
+    width: 40%;
+    background-color: #4b85a0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+.whiteArea {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+}
+.showTotallArea-White{
+    width: 60%;
+    margin: 0 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showTotallArea-White h1{
+    text-align: center;
+}
+
+#tableContainer {
+    width: 99%;
+    height: 50%;
+    border: 1px solid black;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#recordTable{
+    width: 100%;   
+}
+
+#recordTable tr{
+    text-align: center;
+    height: 10%;
+    border: 1px black solid;
+}
+#recordTable th{
+    height: 10%;
+    text-align: center;
+}
+#recordTable td{
+    text-align: center;
+}
+
+/*彈跳視窗*/
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.popup input {
+    display: block;
+    margin: 10px auto;
+}
+.popup button {
+    margin: 5px;
+}

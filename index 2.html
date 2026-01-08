@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記帳工具</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="blueArea">
+        <div class="mainArea">
+            <h3 class="ExpenseTracker">Expense Tracker</h3>
+            <h3 class="Kouhei">Kouhei</h3>
+            <p class="Yourbalance">YOUR BALANCE</p>
+            <h1 class="moneyyy" id="netIncome">0</h1>
+        </div>
+    </div>
+    <div class="whiteArea">
+        <div class="showTotallArea-White">
+            <!-- 收益顯示 -->
+            <div class="Income">
+                <h2>INCOME</h2>
+                <div>
+                </div>
+                <h1 id="plusNum">0</h1>
+            </div>
+            <!-- 支出顯示 -->
+            <div class="Expense">
+                <h2>EXPENSE</h2>
+                <h1 id="neNum">0</h1>
+            </div>
+        </div>  
+        <div class="btn">
+            <button type="button" class="numBtn" onclick="showPopup()">New</button>
+        </div>
+        <h3>收支紀錄</h3>
+        <div id="tableContainer">
+            <table id="recordTable">
+                <tr>
+                    <th>收入</th>
+                    <th>支出</th>
+                    <th>操作</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--彈跳視窗 -->
+    <div id="popup" class="popup">
+        <h3>新增收支紀錄</h3>
+        <label>收入: <input type="number" id="popupIncome" value="0"></label>
+        <label>支出: <input type="number" id="popupExpense" value="0"></label>
+        <button onclick="submitRecord()">確定</button>
+        <button onclick="closePopup()">取消</button>
+    </div>
+    <script src="./account.js"></script>   
+</body>
+</html>
